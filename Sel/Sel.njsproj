@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Sel</Name>
+    <RootNamespace>Sel</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e8eab98c-97bf-41bf-910a-6630e1549943</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\advert.js" />
+    <Compile Include="lib\angular\angular.min.js" />
+    <Compile Include="server.js" />
+    <Compile Include="Controllers\user.js" />
+    <Content Include="Database\Avatars\sawyer.bmp" />
+    <Content Include="Database\Images\1.jpg" />
+    <Content Include="Database\Images\10.jpg" />
+    <Content Include="Database\Images\11.jpg" />
+    <Content Include="Database\Images\12.jpg" />
+    <Content Include="Database\Images\13.jpg" />
+    <Content Include="Database\Images\14.jpg" />
+    <Content Include="Database\Images\15.jpg" />
+    <Content Include="Database\Images\16.jpg" />
+    <Content Include="Database\Images\17.jpg" />
+    <Content Include="Database\Images\18.jpg" />
+    <Content Include="Database\Images\19.jpg" />
+    <Content Include="Database\Images\2.jpg" />
+    <Content Include="Database\Images\20.jpg" />
+    <Content Include="Database\Images\21.jpg" />
+    <Content Include="Database\Images\22.jpg" />
+    <Content Include="Database\Images\23.jpg" />
+    <Content Include="Database\Images\3.jpg" />
+    <Content Include="Database\Images\4.jpg" />
+    <Content Include="Database\Images\5.jpg" />
+    <Content Include="Database\Images\6.jpg" />
+    <Content Include="Database\Images\7.jpg" />
+    <Content Include="Database\Images\8.jpg" />
+    <Content Include="Database\Images\9.jpg" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="style\index.css" />
+    <Content Include="style\user.css" />
+    <Content Include="Views\admin.html" />
+    <Content Include="Views\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Database\Images\" />
+    <Folder Include="Database\Avatars\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\angular\" />
+    <Folder Include="Database\" />
+    <Folder Include="style\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

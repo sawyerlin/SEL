@@ -1,0 +1,38 @@
+﻿<html ng-app="advert">
+<head>
+    <title>SEL</title>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="/Controllers/advert.js"></script>
+    <!--<script src="/Controllers/user.js"></script>-->
+    <link type="text/css" rel="stylesheet" href="/style/index.css" />
+    <link type="text/css" rel="stylesheet" href="/style/user.css" />
+</head>
+<body ng-controller="AdvertListCtrl">
+    <div class="advert-header">
+        <div class="advert-header-item"
+             ng-repeat="category in categories"
+             data-ng-class="{'advert-header-selected': $index == selectedIndex}"
+             data-ng-click="$parent.search.type = category.Name; itemClicked($index)">{{category.ShowName}}</div>
+        <div class="user">
+            <div class="user-avatar">
+                <img src="{{currentUser.Avatar}}" />
+            </div>
+            <a class="user-info">{{currentUser.Name}}</a>
+        </div>
+    </div>
+
+    <div class="advert-content">
+        <div class="advert-item" ng-repeat="advert in adverts | filter:search">
+            <div class="advert-item-image">
+                <img src="{{advert.image}}" />
+            </div>
+            <div class="advert-item-title">
+                {{advert.name}}
+            </div>
+            <div class="advert-item-description">
+                {{advert.description}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

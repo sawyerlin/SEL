@@ -1,0 +1,11 @@
+{
+  "name": "Sel",
+  "version": "0.0.0",
+  "description": "Sel",
+  "main": "server.js",
+  "author": {
+    "name": "Sawyer",
+    "email": ""
+  },
+  "dependencies": {}
+}

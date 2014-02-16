@@ -1,0 +1,25 @@
+﻿.user {
+    width: 300px;
+    height: 80px;
+    background: #BCBCBC;
+    float: right;
+}
+
+    .user .user-avatar {
+        width: 80px;
+        height: 80px;
+        background: white;
+        float: left;
+    }
+
+    .user .user-avatar img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .user .user-info {
+        padding: 20px;
+        font-size: xx-large;
+        font-weight: bold;
+        float: left;
+    }
