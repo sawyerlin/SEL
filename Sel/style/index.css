@@ -1,41 +1,17 @@
 ﻿body {
     background-color: #ECECEC;
+    margin: 0;
 }
 
 .advert-header {
-    height: 80px;
     width: 100%;
     background: #ECECEC;
-    margin: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    min-width: 800px;
-}
-
-.advert-header .advert-header-selected {
-    background-color: #BCBCBC;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.advert-header .advert-header-item {
-    margin-left: 5px;
-    color: #000000;
-    float: left;
-    padding: 20px;
-    font-size: xx-large;
-    font-weight: bold;
-    cursor: pointer; 
-}
-
-.advert-header .advert-header-item:hover {
-    background-color: #BCBCBC;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
+    margin: 5px
 }
 
 .advert-content {
-    margin-top: 10px;
+    float: left;
+    width: 100%;
 }
 
     .advert-content .advert-item {

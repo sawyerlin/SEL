@@ -30,9 +30,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controllers\advert.js" />
+    <Compile Include="lib\bootstrap\bootstrap.js" />
+    <Compile Include="lib\bootstrap\bootstrap.min.js" />
+    <Compile Include="lib\angular\angular-route.min.js" />
     <Compile Include="lib\angular\angular.min.js" />
+    <Compile Include="lib\jquery\jquery-1.9.0.min.js" />
     <Compile Include="server.js" />
     <Compile Include="Controllers\user.js" />
+    <Compile Include="style\common.css" />
+    <Content Include="style\bootstrap\bootstrap-theme.css" />
+    <Content Include="style\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="style\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="style\bootstrap\bootstrap.css" />
+    <Content Include="style\bootstrap\bootstrap.css.map" />
+    <Content Include="style\bootstrap\bootstrap.min.css" />
     <Content Include="Database\Avatars\sawyer.bmp" />
     <Content Include="Database\Images\1.jpg" />
     <Content Include="Database\Images\10.jpg" />
@@ -57,17 +68,28 @@
     <Content Include="Database\Images\7.jpg" />
     <Content Include="Database\Images\8.jpg" />
     <Content Include="Database\Images\9.jpg" />
+    <Content Include="style\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="style\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="style\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="style\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\angular\angular-route.min.js.map" />
+    <Content Include="lib\angular\angular.min.js.map" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="style\index.css" />
     <Content Include="style\user.css" />
     <Content Include="Views\admin.html" />
     <Content Include="Views\index.html" />
+    <Content Include="Views\user.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="lib\bootstrap\" />
+    <Folder Include="lib\jquery\" />
+    <Folder Include="style\bootstrap\" />
     <Folder Include="Database\Images\" />
     <Folder Include="Database\Avatars\" />
+    <Folder Include="style\fonts\" />
     <Folder Include="lib\" />
     <Folder Include="lib\angular\" />
     <Folder Include="Database\" />

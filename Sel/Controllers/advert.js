@@ -1,4 +1,4 @@
-﻿var advert = angular.module('advert',[]);
+﻿var advert = angular.module('advert',['user']);
 
 var categories = [
     {
@@ -26,14 +26,8 @@ for (var i = 1; i < 24; i ++) {
             'type': type
             });
 }
-var currentUser = {
-        Id: 0,
-        Name:'Sawyer',
-        Avatar: 'http://localhost:8000/Database/Avatars/sawyer.bmp'
-        };
 
 advert.controller('AdvertListCtrl', function($scope) {
-    $scope.currentUser = currentUser;
     $scope.adverts = adverts;
     $scope.categories = categories;
     $scope.selectedIndex = 0;

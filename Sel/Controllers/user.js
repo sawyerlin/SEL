@@ -1,9 +1,9 @@
-﻿var current = angular.module('current',[]);
+﻿var user = angular.module('user', []);
 
-current.controller('CurrentCtrl', function($scope) {
-    $scope.currentAccount = {
+user.controller('UserCtrl', function($scope) {
+    $scope.currentUser = {
         Id: 0,
         Name:'Sawyer',
-        Avatar: 'http://localhost:8080/Database/Avatars/sawyer.bmp'
+        Avatar: 'http://localhost:8000/Database/Avatars/sawyer.bmp'
         };
 });
