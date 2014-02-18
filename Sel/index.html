@@ -1,0 +1,38 @@
+﻿<html ng-app="selApp">
+<head>
+    <title>SEL</title>
+    <link type="text/css" rel="stylesheet" href="/style/bootstrap/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/style/bootstrap/bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="/style/common.css" />
+    <link type="text/css" rel="stylesheet" href="/style/index.css" />
+    <link type="text/css" rel="stylesheet" href="/style/user.css" />
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/jquery/jquery-1.9.0.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/Controllers/user.js"></script>
+    <script src="app/Controllers/advert.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="user" ng-controller="UserCtrl">
+            <div class="btn-group">
+                <div class="user-avatar">
+                    <img ng-src='{{currentUser.Avatar}}' />
+                </div>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    {{currentUser.Name}} <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Ajouter</a></li>
+                    <li><a href="#">Gestion</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/Views/user.html">Configuration</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ng-view></div>
+</body>
+</html>

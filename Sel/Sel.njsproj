@@ -29,15 +29,17 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Controllers\advert.js" />
+    <Compile Include="app\app.js" />
+    <Compile Include="app\Controllers\advert.js" />
     <Compile Include="lib\bootstrap\bootstrap.js" />
     <Compile Include="lib\bootstrap\bootstrap.min.js" />
     <Compile Include="lib\angular\angular-route.min.js" />
     <Compile Include="lib\angular\angular.min.js" />
     <Compile Include="lib\jquery\jquery-1.9.0.min.js" />
     <Compile Include="server.js" />
-    <Compile Include="Controllers\user.js" />
+    <Compile Include="app\Controllers\user.js" />
     <Compile Include="style\common.css" />
+    <Content Include="partials\home.html" />
     <Content Include="style\bootstrap\bootstrap-theme.css" />
     <Content Include="style\bootstrap\bootstrap-theme.css.map" />
     <Content Include="style\bootstrap\bootstrap-theme.min.css" />
@@ -79,13 +81,15 @@
     <Content Include="style\index.css" />
     <Content Include="style\user.css" />
     <Content Include="Views\admin.html" />
-    <Content Include="Views\index.html" />
+    <Content Include="index.html" />
     <Content Include="Views\user.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="app\Controllers\" />
     <Folder Include="lib\bootstrap\" />
     <Folder Include="lib\jquery\" />
+    <Folder Include="app\" />
+    <Folder Include="partials\" />
     <Folder Include="style\bootstrap\" />
     <Folder Include="Database\Images\" />
     <Folder Include="Database\Avatars\" />

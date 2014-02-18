@@ -1,0 +1,24 @@
+﻿<div>
+    <div class="advert-header">
+        <ul class="nav nav-pills">
+            <li ng-repeat="category in categories"
+                data-ng-class="{'active': $index == selectedIndex}"
+                data-ng-click="$parent.search.type = category.Name; itemClicked($index)">
+                <a href="#">{{category.ShowName}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="advert-content">
+        <div class="advert-item" ng-repeat="advert in adverts | filter:search">
+            <div class="advert-item-image">
+                <img ng-src="{{advert.image}}" />
+            </div>
+            <div class="advert-item-title">
+                {{advert.name}}
+            </div>
+            <div class="advert-item-description">
+                {{advert.description}}
+            </div>
+        </div>
+    </div>
+</div>
