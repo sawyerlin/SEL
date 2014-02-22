@@ -12,11 +12,11 @@
     <script src="lib/bootstrap/bootstrap.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/Controllers/user.js"></script>
-    <script src="app/Controllers/advert.js"></script>
+    <script src="app/Controllers/announce.js"></script>
 </head>
 <body>
     <div class="header">
-        <div class="user" ng-controller="UserCtrl">
+        <div class="user" ng-controller="UserControl">
             <div class="btn-group">
                 <div class="user-avatar">
                     <img ng-src='{{currentUser.Avatar}}' />
@@ -25,10 +25,10 @@
                     {{currentUser.Name}} <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Ajouter</a></li>
-                    <li><a href="#">Gestion</a></li>
+                    <li><a href="">Ajouter</a></li>
+                    <li><a href="">Gestion</a></li>
                     <li class="divider"></li>
-                    <li><a href="/Views/user.html">Configuration</a></li>
+                    <li><a href="#/users/{{currentUser.Id}}">Configuration</a></li>
                 </ul>
             </div>
         </div>

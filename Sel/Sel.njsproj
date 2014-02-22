@@ -30,12 +30,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app\app.js" />
-    <Compile Include="app\Controllers\advert.js" />
+    <Compile Include="app\Controllers\announce.js" />
     <Compile Include="lib\bootstrap\bootstrap.js" />
     <Compile Include="lib\bootstrap\bootstrap.min.js" />
     <Compile Include="lib\angular\angular-route.min.js" />
     <Compile Include="lib\angular\angular.min.js" />
     <Compile Include="lib\jquery\jquery-1.9.0.min.js" />
+    <Compile Include="lib\nodejs\database\sel-mysql.js" />
     <Compile Include="server.js" />
     <Compile Include="app\Controllers\user.js" />
     <Compile Include="style\common.css" />
@@ -80,15 +81,16 @@
     <Content Include="README.md" />
     <Content Include="style\index.css" />
     <Content Include="style\user.css" />
-    <Content Include="Views\admin.html" />
     <Content Include="index.html" />
-    <Content Include="Views\user.html" />
+    <Content Include="partials\user.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\Controllers\" />
     <Folder Include="lib\bootstrap\" />
     <Folder Include="lib\jquery\" />
     <Folder Include="app\" />
+    <Folder Include="lib\nodejs\" />
+    <Folder Include="lib\nodejs\database\" />
     <Folder Include="partials\" />
     <Folder Include="style\bootstrap\" />
     <Folder Include="Database\Images\" />
@@ -98,7 +100,6 @@
     <Folder Include="lib\angular\" />
     <Folder Include="Database\" />
     <Folder Include="style\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
   <ProjectExtensions>
