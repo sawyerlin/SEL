@@ -36,7 +36,6 @@
     <Compile Include="lib\angular\angular-route.min.js" />
     <Compile Include="lib\angular\angular.min.js" />
     <Compile Include="lib\jquery\jquery-1.9.0.min.js" />
-    <Compile Include="lib\nodejs\database\sel-mysql.js" />
     <Compile Include="server.js" />
     <Compile Include="app\Controllers\user.js" />
     <Compile Include="style\common.css" />
@@ -89,8 +88,6 @@
     <Folder Include="lib\bootstrap\" />
     <Folder Include="lib\jquery\" />
     <Folder Include="app\" />
-    <Folder Include="lib\nodejs\" />
-    <Folder Include="lib\nodejs\database\" />
     <Folder Include="partials\" />
     <Folder Include="style\bootstrap\" />
     <Folder Include="Database\Images\" />

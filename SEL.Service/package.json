@@ -1,11 +1,13 @@
 {
-  "name": "Sel",
+  "name": "SEL.Service",
   "version": "0.0.0",
-  "description": "Sel",
+  "description": "SEL.Service",
   "main": "server.js",
   "author": {
     "name": "Sawyer",
     "email": ""
   },
-  "dependencies": {}
+  "dependencies": {
+    "mysql": "~2.1.0"
+  }
 }
