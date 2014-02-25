@@ -1,5 +1,13 @@
-﻿.header {
-    width: 100%;
-    background-color: #000000;
-    height: 50px;
+﻿.button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #006400;
+    color: white;
+    float: left;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
 }
+
+    .button:hover {
+        background: #b22222;
+    }

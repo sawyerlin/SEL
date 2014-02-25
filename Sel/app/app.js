@@ -14,6 +14,12 @@ selApp.config([
             }).
             when('/users/:userId', {
                 templateUrl: 'partials/user.html',
+                controller: 'UserControl'
+            }).when('/login', {
+                templateUrl: 'partials/login.html',
+                controller: 'UserControl'
+            }).when('/register', {
+                templateUrl: 'partials/register.html',
                 controller:'UserControl'
             });
     }

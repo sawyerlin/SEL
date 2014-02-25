@@ -29,3 +29,7 @@ exports.getUser = function(id, result) {
         result(rows);
     });
 };
+
+exports.register = function(user) {
+    console.log(user);
+}

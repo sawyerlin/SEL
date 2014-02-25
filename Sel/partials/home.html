@@ -1,12 +1,11 @@
 ﻿<div>
     <div class="advert-header">
-        <ul class="nav nav-pills">
-            <li ng-repeat="category in categories"
-                data-ng-class="{'active': $index == selectedIndex}"
-                data-ng-click="$parent.search.type = category.Name; itemClicked($index)">
-                <a href="">{{category.ShowName}}</a>
-            </li>
-        </ul>
+        <div class="category"
+             ng-repeat="category in categories"
+             data-ng-class="{'active': $index == selectedIndex}"
+             data-ng-click="$parent.search.type = category.Name; itemClicked($index)">
+            {{category.ShowName}}
+        </div>
     </div>
     <div class="advert-content">
         <div class="advert-item" ng-repeat="advert in adverts | filter:search">

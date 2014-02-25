@@ -2,41 +2,8 @@
     background-color: #ECECEC;
     margin: 0;
 }
-
-.advert-header {
+.header {
     width: 100%;
-    background: #ECECEC;
-    margin: 5px
-}
-
-.advert-content {
-    float: left;
-    width: 100%;
-}
-
-    .advert-content .advert-item {
-        background-color: white;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
-        float: left;
-        width: 220px;
-        height: 300px;
-        margin: 5px;
-    }
-
-    .advert-content .advert-item-image {
-        margin: 10px;
-    }
-
-        .advert-content .advert-item-image img {
-            width: 200px;
-            height: 200px;
-        }
-
-    .advert-content .advert-item-title {
-        margin: 10px;
-    }
-
-.advert-item-description {
-    margin: 10px;
+    background-color: #000000;
+    height: 50px;
 }

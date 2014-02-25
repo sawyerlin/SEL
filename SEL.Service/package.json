@@ -8,6 +8,9 @@
     "email": ""
   },
   "dependencies": {
-    "mysql": "~2.1.0"
-  }
+    "mysql": "~2.1.0",
+    "restify": "~2.6.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
 }

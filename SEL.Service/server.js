@@ -1,25 +1,28 @@
-var http = require('http');
-var url = require('url');
+var restify = require('restify');
 var selUser = require('./selUser');
 
-var port = process.env.port || 1337;
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    var pathname = url.parse(req.url).pathname;
+function respond(req, res, next) {
+  res.send('hello ' + req.params.name);
+}
 
-    switch (pathname) {
-        case '/user/login':
-            selUser.login('admin', '123456', function(result) {
-                res.end(result.toString());    
-            });
-            
-        break;
-        case '/user/getUser':
-            selUser.getUser(1, function(result) {
-                 res.end(JSON.stringify(result));
-            });
-        break;
-        default:
-        break;
-    }
-}).listen(port);
+function createNewUser(req, res, next) {
+    var user = {};
+    user.username = req.params.username;
+    user.password = req.params.password;
+    user.avatar = req.params.avatar;
+
+    res.setHeader('Access-Control-Allow-Origin','*');
+
+    selUser.register(user);
+
+    return next();
+}
+
+var server = restify.createServer();
+
+server.get('/hello/:name', respond);
+server.post({path:'/user/register'}, createNewUser);
+
+server.listen(8001, function() {
+  console.log('%s listening at %s', server.name, server.url);
+});

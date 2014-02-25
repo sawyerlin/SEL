@@ -1,0 +1,52 @@
+﻿
+.advert-header {
+    width: 100%;
+    background: #ECECEC;
+    margin: 5px;
+}
+
+    .advert-header .category {
+        float: left;
+        font-size: x-large;
+        cursor: pointer;
+        padding: 10px 20px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+.advert-header .active {
+        background-color: black;
+        color: white;
+    }
+
+.advert-content {
+    float: left;
+    width: 100%;
+}
+
+    .advert-content .advert-item {
+        background-color: white;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        float: left;
+        width: 220px;
+        height: 300px;
+        margin: 5px;
+    }
+
+    .advert-content .advert-item-image {
+        margin: 10px;
+    }
+
+        .advert-content .advert-item-image img {
+            width: 200px;
+            height: 200px;
+        }
+
+    .advert-content .advert-item-title {
+        margin: 10px;
+    }
+
+.advert-item-description {
+    margin: 10px;
+}
