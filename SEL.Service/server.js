@@ -1,27 +1,23 @@
 var restify = require('restify');
 var selUser = require('./selUser');
 
-function respond(req, res, next) {
+function respond(req, res) {
   res.send('hello ' + req.params.name);
 }
 
-function createNewUser(req, res, next) {
-    var user = {};
-    user.username = req.params.username;
-    user.password = req.params.password;
-    user.avatar = req.params.avatar;
+function createNewUser(req, res) {
 
-    res.setHeader('Access-Control-Allow-Origin','*');
+    selUser.register(req.params);
 
-    selUser.register(user);
-
-    return next();
+    res.send("You posted a first name of " + req.params.test);
 }
 
 var server = restify.createServer();
-
+server.use(restify.CORS({origins: ['*']}));
+server.use(restify.fullResponse());
+server.use(restify.bodyParser());
 server.get('/hello/:name', respond);
-server.post({path:'/user/register'}, createNewUser);
+server.post('/user/register', createNewUser);
 
 server.listen(8001, function() {
   console.log('%s listening at %s', server.name, server.url);

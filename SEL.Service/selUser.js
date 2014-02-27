@@ -31,5 +31,8 @@ exports.getUser = function(id, result) {
 };
 
 exports.register = function(user) {
-    console.log(user);
+    var query = 'INSERT INTO User(UserName, UserPassword, UserAvatar) VALUE(\'' + user.username + '\' ,\'' + user.password + '\' ,\'' + user.avatar +  '\')';
+    connection.query(query, function(err, rows) {
+        if (err) throw err;
+    });
 }
